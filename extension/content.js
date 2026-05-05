@@ -394,11 +394,12 @@ hr { border: none; border-top: 1px solid rgba(100,100,100,0.2); margin: 8px 0; }
 <body>
 <h1 class="title">${esc(title)}</h1>\n`
 
-	messages.forEach(({ source, message }) => {
+	html += messages.map(({ source, message }) => {
 		const role = source === 'user' ? 'You' : 'Claude'
 		const cls = source === 'user' ? 'human' : 'claude'
-		html += `<article class="${cls}" data-role="${source}">\n<div class="role">${role}</div>\n<div class="content">${markdownToHTML(message)}</div>\n</article>\n`
-	})
+		return `<article class="${cls}" data-role="${source}">\n<div class="role">${role}</div>\n<div class="content">${markdownToHTML(message)}</div>\n</article>\n`
+	}).join('')
+
 	html += `</body>\n</html>`
 	return html
 }
