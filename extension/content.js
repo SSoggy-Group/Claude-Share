@@ -234,10 +234,13 @@ function markdownToPlainText(message) {
 }
 
 function convertToMarkdown(title, messages) {
-	return `# ${title}\n\n` + messages.map(({ source, message }) => {
-		const role = source === 'user' ? 'You' : 'Claude'
-		return `## ${role}\n\n${normalizeMessageMarkdown(message)}\n\n---\n\n`
-	}).join('')
+	return [
+		`# ${title}\n\n`,
+		...messages.map(({ source, message }) => {
+			const role = source === 'user' ? 'You' : 'Claude'
+			return `## ${role}\n\n${normalizeMessageMarkdown(message)}\n\n---\n\n`
+		})
+	].join('')
 }
 
 function convertToText(title, messages) {
