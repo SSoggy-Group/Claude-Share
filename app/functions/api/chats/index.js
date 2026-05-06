@@ -16,7 +16,7 @@ export async function onRequestPost(context) {
         return Response.json({
             id: newChat.id,
         }, { status: 201 });
-    } catch {
-        return Response.json({ msg: "something went wrong!" }, { status: 500 });
+    } catch (error) {
+        return Response.json({ msg: getReadableError(error) }, { status: 500 });
     }
 }
