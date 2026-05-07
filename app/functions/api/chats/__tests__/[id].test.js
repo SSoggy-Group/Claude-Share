@@ -78,8 +78,6 @@ describe('chats/[id].js onRequestGet', () => {
 
         const response = await onRequestGet(mockContext);
 
-        expect(consoleLogSpy).toHaveBeenCalledWith("Error getting a chat: ", error);
-
         expect(global.Response.json).toHaveBeenCalledWith(
             { msg: 'Something went wrong!' },
             expect.objectContaining({

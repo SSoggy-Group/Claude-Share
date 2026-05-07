@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-function formatChatAsText(chatData) {
+export function formatChatAsText(chatData) {
     const lines = [`# ${chatData.title}`, ''];
     const messages = Array.isArray(chatData.content) ? chatData.content : [];
     for (const { source, message } of messages) {
