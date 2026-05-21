@@ -98,3 +98,8 @@ Contributions are welcome! Feel free to:
 <!-- markdownlint-enable MD033 -->
 
 Made with ☕ for the Claude community
+
+
+NOTE: 
+I didn't make the core of thi sproject, but the repo owner didn't want to merge my pull request that would fix the repo, so I guess use this fork now
+about usage of ai: gemini helped me with parts of my version of shareclaude
