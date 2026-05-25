@@ -10,7 +10,7 @@ function Header() {
                     <span className="text-xl font-semibold text-gray-200">AI-Chat-Export</span>
                 </Link>
                 <a
-                    href="https://github.com/maaren/ai-chat-export"
+                    href="https://github.com/SSoggy-Group/AI-Chat-Export"
                     target="_blank"
                     className="flex items-center space-x-2 text-gray-400 hover:text-gray-200 transition-colors"
                 >
