@@ -5,7 +5,7 @@ function PrivacyPolicy() {
                 <h1 className="mb-6 text-xl font-bold">Privacy Policy</h1>
 
                 <p className="text-gray-300">
-                    We only collect the content of your Claude AI conversations to generate
+                    We only collect the content of your shared AI conversations to generate
                     shareable URLs. No analytics or tracking tools are used, and no additional
                     data is collected. The extension is open source for transparency. You can
                     review the code to see how it works.
@@ -15,10 +15,10 @@ function PrivacyPolicy() {
 
                 <p className="mb-4 text-gray-300">
                     When you share a conversation, the extension saves it to AI-Chat-Export&apos;s
-                    database, not Claude&apos;s. Each conversation is assigned a unique URL,
+                    database, not the original AI platform&apos;s database. Each conversation is assigned a unique URL,
                     similar to an unlisted YouTube video. This URL can be shared with others,
                     but it won&apos;t appear in search results on Google. Subsequent conversations
-                    are served from AI-Chat-Export&apos;s database, not directly from Claude.
+                    are served from AI-Chat-Export&apos;s database, not directly from the source AI bot.
                 </p>
 
                 <p className="italic text-gray-300">
