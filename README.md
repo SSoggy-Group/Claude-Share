@@ -1,12 +1,8 @@
-# [ShareClaude](https://shareclaude.pages.dev)
+# [AI-Chat-Export](https://ai.ssoggy.me)
 
 Browser extension to share and export your [Claude](https://claude.ai) chats with one click.
 
-[![Visit ShareClaude](https://img.shields.io/badge/Visit-ShareClaude-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNEOTc3NTciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zaGFyZS0yIj48Y2lyY2xlIGN4PSIxOCIgY3k9IjUiIHI9IjMiLz48Y2lyY2xlIGN4PSI2IiBjeT0iMTIiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjE5IiByPSIzIi8+PGxpbmUgeDE9IjguNTkiIHgyPSIxNS40MiIgeTE9IjEzLjUxIiB5Mj0iMTcuNDkiLz48bGluZSB4MT0iMTUuNDEiIHgyPSI4LjU5IiB5MT0iNi41MSIgeTI9IjEwLjQ5Ii8+PC9zdmc+)](https://shareclaude.pages.dev)
-[![Platform Chrome](https://img.shields.io/badge/Platform-Chrome-yellow?logo=google-chrome&logoColor=yellow)](https://chrome.google.com/webstore/detail/shareclaude/pcpjdbnjhgofgjgegodlnebdnmiddmaa)
-[![Platform Firefox](https://img.shields.io/badge/Platform-Firefox-orange?logo=firefox-browser&logoColor=orange)](https://addons.mozilla.org/en-US/firefox/addon/shareclaude/)
-
-## [Download from Chrome Web Store](https://chromewebstore.google.com/detail/shareclaude/pcpjdbnjhgofgjgegodlnebdnmiddmaa) OR [Download from Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/shareclaude/)
+[![Visit AI-Chat-Export](https://img.shields.io/badge/Visit-AI-Chat-Export-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNEOTc3NTciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zaGFyZS0yIj48Y2lyY2xlIGN4PSIxOCIgY3k9IjUiIHI9IjMiLz48Y2lyY2xlIGN4PSI2IiBjeT0iMTIiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjE5IiByPSIzIi8+PGxpbmUgeDE9IjguNTkiIHgyPSIxNS40MiIgeTE9IjEzLjUxIiB5Mj0iMTcuNDkiLz48bGluZSB4MT0iMTUuNDEiIHgyPSI4LjU5IiB5MT0iNi41MSIgeTI9IjEwLjQ5Ii8+PC9zdmc+)](https://ai.ssoggy.me)
 
 ## Features
 
@@ -17,8 +13,8 @@ Browser extension to share and export your [Claude](https://claude.ai) chats wit
 
 ## How It Works
 
-When you share a conversation, the extension stores the conversation in ShareClaude's database, not Claude's. Each conversation gets a unique URL, similar to an unlisted YouTube video. The URL can be shared with anyone, but it won't show up in Google search results.
-Shared conversations are served from ShareClaude's database, not directly from Claude.
+When you share a conversation, the extension stores the conversation in AI-Chat-Export's database, not Claude's. Each conversation gets a unique URL, similar to an unlisted YouTube video. The URL can be shared with anyone, but it won't show up in Google search results.
+Shared conversations are served from AI-Chat-Export's database, not directly from Claude.
 
 *Important: While the URL is private and not searchable, anyone with the URL can still view the conversation. Please avoid sharing sensitive or personal information.*
 
@@ -26,9 +22,9 @@ Shared conversations are served from ShareClaude's database, not directly from C
 
 1. Open [Claude](https://claude.ai) in your browser
 2. Start or continue a conversation with Claude
-3. Click the **ShareClaude** button in the top-right corner (next to Claude's native Share button, separated by a divider)
+3. Click the **AI-Chat-Export** button in the top-right corner (next to Claude's native Share button, separated by a divider)
 4. A menu appears with options:
-   - **Share to ShareClaude:** Uploads the conversation and copies the link to your clipboard as an alternative to Claude's native share option
+   - **Share to AI-Chat-Export:** Uploads the conversation and copies the link to your clipboard as an alternative to Claude's native share option
    - **Export:** Downloads the conversation as HTML, Markdown, plain text, JSON, or Word (.docx)
 
 ## Tech Stack
@@ -41,14 +37,12 @@ Shared conversations are served from ShareClaude's database, not directly from C
 
 ### Chrome
 
-Install from [Chrome Web Store](https://chromewebstore.google.com/detail/shareclaude/pcpjdbnjhgofgjgegodlnebdnmiddmaa) **(Recommended)**
-
-**OR** for development/debugging:
+For development/debugging:
 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/mariomaaren/AI-Chat-Export.git
+   git clone https://github.com/maaren/ai-chat-export.git
    ```
 
 2. Open Chrome and navigate to `chrome://extensions/`
@@ -57,14 +51,12 @@ Install from [Chrome Web Store](https://chromewebstore.google.com/detail/sharecl
 
 ### Firefox
 
-Install from [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/shareclaude/) **(Recommended)**
-
-**OR** for development/debugging:
+For development/debugging:
 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/mariomaaren/AI-Chat-Export.git
+   git clone https://github.com/maaren/ai-chat-export.git
    ```
 
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
@@ -81,18 +73,18 @@ Contributions are welcome! Feel free to:
 
 ## Links
 
-- [Website](https://shareclaude.pages.dev)
+- [Website](https://ai.ssoggy.me)
 
 ---
 
 ## Star History
 
 <!-- markdownlint-disable MD033 -->
-<a href="https://www.star-history.com/?repos=mariomaaren%2FAI-Chat-Export&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=maaren%2Fai-chat-export&type=date&legend=top-left">
  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=mariomaaren/AI-Chat-Export&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=mariomaaren/AI-Chat-Export&type=date&legend=top-left" />
-    <img alt="Star History Chart" src="https://api.star-history.com/image?repos=mariomaaren/AI-Chat-Export&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=maaren/ai-chat-export&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=maaren/ai-chat-export&type=date&legend=top-left" />
+    <img alt="Star History Chart" src="https://api.star-history.com/image?repos=maaren/ai-chat-export&type=date&legend=top-left" />
  </picture>
 </a>
 <!-- markdownlint-enable MD033 -->
@@ -102,4 +94,4 @@ Made with ☕ for the Claude community
 
 NOTE: 
 I didn't make the core of thi sproject, but the repo owner didn't want to merge my pull request that would fix the repo, so I guess use this fork now
-about usage of ai: gemini helped me with parts of my version of shareclaude
+about usage of ai: gemini helped me with parts of my version of ai-chat-export

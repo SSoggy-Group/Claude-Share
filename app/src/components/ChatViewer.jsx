@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import ChatMessage from './ChatMessage';
 import { useParams } from 'react-router-dom';
 
-const PROD_API_ORIGIN = 'https://shareclaude.pages.dev';
+const PROD_API_ORIGIN = 'https://ai.ssoggy.me';
 
 function isLocalDevHost() {
     const { hostname } = window.location;
@@ -58,7 +58,7 @@ function ChatViewer() {
                     throw lastError ?? new Error('Unable to load chat data');
                 }
 
-                document.title = data?.title ?? 'Chats - ShareClaude';
+                document.title = data?.title ?? 'Chats - AI-Chat-Export';
                 setChatData(data);
             } catch (err) {
                 setError(err instanceof Error ? err.message : 'An error occurred');
@@ -82,7 +82,7 @@ function ChatViewer() {
                         <h1 className="text-2xl font-bold text-gray-100">
                             {chatData.title}
                         </h1>
-                        <div className="mt-2 h-0.5 w-12 mx-auto rounded-full bg-shareClaude-accent/60" />
+                        <div className="mt-2 h-0.5 w-12 mx-auto rounded-full bg-aiChatExport-accent/60" />
                         <a
                             href={rawHref}
                             target="_blank"
@@ -103,7 +103,7 @@ function ChatViewer() {
                         ))
                     ) : (
                         <div className="flex justify-center py-16">
-                            <div className="w-10 h-10 border-4 rounded-full border-shareClaude-accent border-t-transparent animate-spin" />
+                            <div className="w-10 h-10 border-4 rounded-full border-aiChatExport-accent border-t-transparent animate-spin" />
                         </div>
                     )}
                 </section>

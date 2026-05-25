@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "ShareClaude",
+    "name": "AI-Chat-Export",
     "description": "Share your Claude chats with one click, preserving syntax highlighting for conversations",
     "version": "0.3.3",
     "permissions": ["clipboardWrite"],
@@ -29,7 +29,7 @@
     ],
     "browser_specific_settings": {
         "gecko": {
-            "id": "shareclaude@shareclaude.pages.dev",
+            "id": "ai-chat-export@ai.ssoggy.me",
             "strict_min_version": "109.0"
         }
     }

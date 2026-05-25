@@ -1,4 +1,4 @@
-(function initShareClaudeExcerptUtils(root) {
+(function initAIChatExportExcerptUtils(root) {
 	const EXCERPT_HEADER_RE = /excerpt_from_previous_claude_message\.txt:\s*(?:\r?\n){2}/g
 	const EXCERPT_MARKER = 'excerpt_from_previous_claude_message.txt:'
 	const FENCED_EXCERPT_RE = /^```[^\n\r]*\r?\n([\s\S]*?)\r?\n```/
@@ -62,7 +62,7 @@
 			.join('')
 	}
 
-	root.ShareClaudeExcerptUtils = {
+	root.AIChatExportExcerptUtils = {
 		EXCERPT_HEADER_RE,
 		EXCERPT_MARKER,
 		FENCED_EXCERPT_RE,

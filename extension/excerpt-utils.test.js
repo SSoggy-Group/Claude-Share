@@ -1,9 +1,9 @@
 const test = require('node:test');
 const assert = require('node:assert');
 
-// Load the script. It registers ShareClaudeExcerptUtils on globalThis.
+// Load the script. It registers AI-Chat-ExportExcerptUtils on globalThis.
 require('./excerpt-utils.js');
-const { splitTextOnExcerpts, transformExcerptBlocks } = globalThis.ShareClaudeExcerptUtils;
+const { splitTextOnExcerpts, transformExcerptBlocks } = globalThis.AIChatExportExcerptUtils;
 
 test('splitTextOnExcerpts', async (t) => {
     await t.test('empty string', () => {

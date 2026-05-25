@@ -1,4 +1,4 @@
-const PAGE_URL = 'https://shareclaude.pages.dev'
+const PAGE_URL = 'https://ai.ssoggy.me'
 const CLAUDE_API_URL = 'https://claude.ai/api/organizations'
 let organizationId = ''
 
@@ -200,7 +200,7 @@ async function getShareURL(messages) {
 
 // --- export conversion functions ---
 const transformExcerptBlocks = (message, transformExcerpt) =>
-	globalThis.ShareClaudeExcerptUtils.transformExcerptBlocks(
+	globalThis.AIChatExportExcerptUtils.transformExcerptBlocks(
 		message,
 		transformExcerpt
 	)
@@ -705,7 +705,7 @@ function injectButtons() {
 	const shareBtn = document.createElement('button')
 	shareBtn.type = 'button'
 	shareBtn.className = 'sc-icon-btn'
-	shareBtn.title = 'Share to ShareClaude'
+	shareBtn.title = 'Share to AI-Chat-Export'
 	shareBtn.innerHTML = shareSVG
 
 	shareBtn.addEventListener('click', async () => {

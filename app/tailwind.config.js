@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				shareClaude: {
+				aiChatExport: {
 					background: '#2C2B28',
 					userChat: '#21201C',
 					claudeChat: '#333330',

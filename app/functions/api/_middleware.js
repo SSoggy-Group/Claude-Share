@@ -1,6 +1,6 @@
 const ALLOWED_ORIGINS = [
     'https://claude.ai',
-    'https://shareclaude.pages.dev',
+    'https://ai.ssoggy.me',
     'http://localhost:4000',
 ];
 

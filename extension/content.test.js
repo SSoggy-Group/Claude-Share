@@ -17,7 +17,7 @@ global.MutationObserver = class {
 };
 
 // Mock excerpt utils since convertToJSON uses normalizeMessageMarkdown
-global.ShareClaudeExcerptUtils = {
+global.AIChatExportExcerptUtils = {
   transformExcerptBlocks: (msg, transform) => {
     // For test simplicity, just pass through the message
     // If the transformation logic becomes complex, we might want to actually require excerpt-utils.js
@@ -67,10 +67,10 @@ test('convertToJSON', async (t) => {
     await t.test('normalizes message markdown correctly', () => {
         // Here we test integration with normalizeMessageMarkdown, but we mocked transformExcerptBlocks
         // Let's create a more realistic mock just for this test
-        const originalTransform = global.ShareClaudeExcerptUtils.transformExcerptBlocks;
+        const originalTransform = global.AIChatExportExcerptUtils.transformExcerptBlocks;
 
         // Mock to pretend it transforms something
-        global.ShareClaudeExcerptUtils.transformExcerptBlocks = (msg) => {
+        global.AIChatExportExcerptUtils.transformExcerptBlocks = (msg) => {
             return msg + " (normalized)";
         };
 
@@ -85,6 +85,6 @@ test('convertToJSON', async (t) => {
         assert.strictEqual(parsed.messages[0].message, "Raw text (normalized)");
 
         // Restore original mock
-        global.ShareClaudeExcerptUtils.transformExcerptBlocks = originalTransform;
+        global.AIChatExportExcerptUtils.transformExcerptBlocks = originalTransform;
     });
 });

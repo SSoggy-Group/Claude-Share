@@ -11,13 +11,13 @@ const Footer = lazy(() => import('./components/Footer'));
 
 const loadingSpinner = (
   <div className="min-h-[calc(100vh-8rem)] flex items-center justify-center text-gray-400">
-    <div className="w-12 h-12 border-4 border-shareClaude-accent border-t-transparent rounded-full animate-spin"></div>
+    <div className="w-12 h-12 border-4 border-aiChatExport-accent border-t-transparent rounded-full animate-spin"></div>
   </div>
 );
 
 function Layout() {
   return (
-    <div className="min-h-screen bg-shareClaude-background flex flex-col overflow-x-hidden">
+    <div className="min-h-screen bg-aiChatExport-background flex flex-col overflow-x-hidden">
       <Header />
       <main className="flex-grow">
         <Suspense fallback={loadingSpinner}>
