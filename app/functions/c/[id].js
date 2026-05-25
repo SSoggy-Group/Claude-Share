@@ -29,11 +29,23 @@ export async function onRequestGet(context) {
         }
         const markdown = lines.join('\n');
 
-        // OPTION 1: If it's an AI bot, serve the raw markdown directly
+        // OPTION 1: If it's an AI bot, serve the raw markdown wrapped in simple HTML
         if (isAIBot) {
-            return new Response(markdown, {
+            const botHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${chat.title} - AI-Chat-Export</title>
+</head>
+<body>
+    <main>
+        <pre style="white-space: pre-wrap; font-family: monospace;">${markdown.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</pre>
+    </main>
+</body>
+</html>`;
+            return new Response(botHtml, {
                 headers: {
-                    'Content-Type': 'text/plain; charset=utf-8',
+                    'Content-Type': 'text/html; charset=utf-8',
                     'Cache-Control': 'public, max-age=3600'
                 },
             });
