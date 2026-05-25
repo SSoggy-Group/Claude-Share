@@ -22,16 +22,21 @@ export async function onRequestPost(context) {
             if (typeof item !== 'object' || item === null || Array.isArray(item)) {
                 return Response.json({ msg: 'content items must be objects' }, { status: 400 });
             }
-            if (typeof item.source !== 'string' || !['user', 'claude'].includes(item.source)) {
-                return Response.json({ msg: 'content item source must be "user" or "claude"' }, { status: 400 });
+            const validSources = ['user', 'claude', 'chatgpt', 'deepseek', 'mistral'];
+            if (typeof item.source !== 'string' || !validSources.includes(item.source)) {
+                return Response.json({ msg: `content item source must be one of: ${validSources.join(', ')}` }, { status: 400 });
             }
             if (typeof item.message !== 'string') {
                 return Response.json({ msg: 'content item message must be a string' }, { status: 400 });
             }
-            sanitizedContent.push({
+            const sanitized = {
                 source: item.source,
                 message: item.message
-            });
+            };
+            if (typeof item.thinking === 'string' && item.thinking.trim()) {
+                sanitized.thinking = item.thinking;
+            }
+            sanitizedContent.push(sanitized);
         }
 
         const [newChat] = await db.insert(chatsSchema).values({ title, content: sanitizedContent }).returning()
