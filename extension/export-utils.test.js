@@ -25,7 +25,7 @@ global.AIChatExportExcerptUtils = {
   }
 };
 
-const { convertToJSON } = require('./content.js');
+const { convertToJSON } = require('./export-utils.js');
 
 test('convertToJSON', async (t) => {
     await t.test('returns valid JSON with title, exportedAt, and messages', () => {

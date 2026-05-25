@@ -136,14 +136,14 @@
     <img src="images/icon-128.png" alt="AI-Chat-Export" />
     <h1>AI-Chat-Export</h1>
   </div>
-  <p class="subtitle">Share & export your Claude conversations</p>
+  <p class="subtitle">Share & export your AI conversations</p>
 
-  <p class="description">Share your Claude AI conversations with a unique URL, or export them locally as Markdown, Text, JSON, HTML, or Word (.docx).</p>
+  <p class="description">Share your conversations from Claude, ChatGPT, Gemini, LeChat, DeepSeek, and Qwen with a unique URL, or export them locally as MD, Text, JSON, HTML, or DOCX.</p>
 
   <div class="steps">
     <div class="step">
       <div class="step-num">1</div>
-      <span>Go to <strong class="highlight-primary">claude.ai</strong> and open a conversation</span>
+      <span>Go to <strong class="highlight-primary">your AI chat</strong> and open a conversation</span>
     </div>
     <div class="step">
       <div class="step-num">2</div>
@@ -155,9 +155,25 @@
     </div>
   </div>
 
-  <div class="cta-buttons">
-    <a href="https://claude.ai" target="_blank" rel="noopener" class="btn btn-primary">Open Claude</a>
-    <a href="https://ai.ssoggy.me" target="_blank" rel="noopener" class="btn btn-secondary">Visit Site</a>
+  <div class="cta-buttons" style="margin-bottom: 10px;">
+    <button id="btn-share" class="btn btn-primary" style="flex: 2;">Share Online</button>
   </div>
+  
+  <div class="cta-buttons" style="margin-bottom: 10px;">
+    <button id="btn-dl-md" class="btn btn-secondary">.MD</button>
+    <button id="btn-dl-json" class="btn btn-secondary">.JSON</button>
+    <button id="btn-dl-txt" class="btn btn-secondary">.TXT</button>
+  </div>
+  
+  <div class="cta-buttons">
+    <button id="btn-dl-html" class="btn btn-secondary">.HTML</button>
+    <button id="btn-dl-docx" class="btn btn-secondary">.DOCX</button>
+  </div>
+
+  <div id="status-msg" style="margin-top: 12px; font-size: 13px; text-align: center; color: #ffb86c; display: none;"></div>
+
+  <script src="excerpt-utils.js"></script>
+  <script src="export-utils.js"></script>
+  <script src="popup.js"></script>
 </body>
 </html>
