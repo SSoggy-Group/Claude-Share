@@ -13,6 +13,12 @@ export default {
 					codeBox: '#21201C',
 					accent: '#D97757',
 					backgroundLight: '#393937'
+				},
+				bot: {
+					claude: { accent: '#D97757', chat: '#333330', bg: '#3d2e27' },
+					chatgpt: { accent: '#10A37F', chat: '#2d3339', bg: '#1a2f2a' },
+					deepseek: { accent: '#4D6BFE', chat: '#2a2d3d', bg: '#1e2140' },
+					mistral: { accent: '#FF7000', chat: '#352d24', bg: '#3a2a1a' }
 				}
 			}
 		}
