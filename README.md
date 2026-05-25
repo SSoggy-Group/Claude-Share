@@ -48,7 +48,7 @@ Install from [Chrome Web Store](https://chromewebstore.google.com/detail/sharecl
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/rohit1kumar/shareclaude.git
+   git clone https://github.com/mariomaaren/AI-Chat-Export.git
    ```
 
 2. Open Chrome and navigate to `chrome://extensions/`
@@ -64,7 +64,7 @@ Install from [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/ad
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/rohit1kumar/shareclaude.git
+   git clone https://github.com/mariomaaren/AI-Chat-Export.git
    ```
 
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
@@ -88,11 +88,11 @@ Contributions are welcome! Feel free to:
 ## Star History
 
 <!-- markdownlint-disable MD033 -->
-<a href="https://www.star-history.com/?repos=rohit1kumar%2Fshareclaude&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=mariomaaren%2FAI-Chat-Export&type=date&legend=top-left">
  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=rohit1kumar/shareclaude&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=rohit1kumar/shareclaude&type=date&legend=top-left" />
-    <img alt="Star History Chart" src="https://api.star-history.com/image?repos=rohit1kumar/shareclaude&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=mariomaaren/AI-Chat-Export&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=mariomaaren/AI-Chat-Export&type=date&legend=top-left" />
+    <img alt="Star History Chart" src="https://api.star-history.com/image?repos=mariomaaren/AI-Chat-Export&type=date&legend=top-left" />
  </picture>
 </a>
 <!-- markdownlint-enable MD033 -->

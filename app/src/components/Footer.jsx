@@ -12,10 +12,10 @@ function Footer() {
                     <a href="https://addons.mozilla.org/firefox/addon/shareclaude/" target="_blank" rel="noopener noreferrer">
                         <Flame className="w-5 h-5 text-gray-400 hover:text-gray-200" />
                     </a>
-                    <a href="https://github.com/rohit1kumar/shareclaude" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/mariomaaren/AI-Chat-Export" target="_blank" rel="noopener noreferrer">
                         <Github className="w-5 h-5 text-gray-400 hover:text-gray-200" />
                     </a>
-                    <a href="https://twitter.com/roh1tkumar" target="_blank" rel="noopener noreferrer">
+                    <a href="https://twitter.com/mariomaaren" target="_blank" rel="noopener noreferrer">
                         <Twitter className="w-5 h-5 text-gray-400 hover:text-gray-200" />
                     </a>
                 </div>
